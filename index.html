@@ -128,16 +128,18 @@
     <h4>Материал корпуса:.................................металл</h4>
     <h4>Размеры:....................................................42*12*6 мм</h4>
     <h4>Масса:.........................................................12 г</h4>
+ 
     <div class="radioButton">
-      <div><input class="radio" type="radio" name="r" value="200" checked>12 Gb</div>
+      <h4>Выберите, чтобы узнать цену:</h4>
+      <div><input class="radio" type="radio" name="r" value="200" >12 Gb</div>
       <div><input class="radio" type="radio" name="r" value="300">32 Gb</div>
       <div><input class="radio" type="radio" name="r" value="400">64 Gb</div>
+      <div><input class="radio" type="radio" name="r" value="500">120 Gb</div>
 
     </div>
-    <div class="radioButton">
-      <div><input type="radio" name="r" value="500">120 Gb</div>
-      <div><input type="radio" name="r" value="600">64 Gb</div>
-    </div>
+     <div class="radioButton">
+            <div id="priceFlash">Цена : </div>
+     </div>
   </div>
 
 
@@ -395,9 +397,19 @@
         centerMode: true,
         variableWidth: true
       });
-    });
 
+// Скрывает и показывает параграф
+      $('#adventeges').hide(2000).show(2000);
+
+      
+$( 'body > div.callculetor > div:nth-child(6)').click(function(){    // задаем функцию при нажатиии на элемент 
+     $( "input" ).select();                                         // вызываем событие select на элементе <input>
+          return  $('#priceFlash').html('Цена : ' + event.target.value + ' грн')
+       })              
+    
+});
     $('.flex-conteyner-icon').css('color', 'blue');
+
   </script>
 
 </body>

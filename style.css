@@ -225,6 +225,15 @@ h4{
 	padding: 10px;
 }
 
+#priceFlash{
+	width: 50%;
+	height: 40px;
+	text-align: center;
+	background-color: white;
+	font-size: 25px;
+	font-weight: bold;
+}
+
 @media (max-width: 750px){
 .callculetor{
 	width: 100%;
@@ -482,3 +491,5 @@ background-image: url(img/foto-1-Anna.png);
 .logo-footer{
 	padding-right: 60%;
 	}
+
+
